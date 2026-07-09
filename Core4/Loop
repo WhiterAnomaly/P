@@ -1,0 +1,32 @@
+const Core4 = {};
+
+Core4.loop = {
+    running: false,
+
+    start() {
+        if (this.running) return;
+
+        this.running = true;
+        requestAnimationFrame(this.update.bind(this));
+    },
+
+    stop() {
+        this.running = false;
+    },
+
+    update() {
+        if (!this.running) return;
+
+        // Atualizar sistemas
+        // Core4.input.update();
+        // Core4.text.update();
+        // Core4.scene.update();
+
+        // Desenhar tudo
+        // Core4.render.draw();
+
+        requestAnimationFrame(this.update.bind(this));
+    }
+};
+
+Core4.loop.start();
