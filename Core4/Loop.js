@@ -34,6 +34,10 @@ Core4.loop = {
             Core4.flow.update();
         }
 
+        if (Core4.text && Core4.text.update) {
+            Core4.text.update();
+        }
+
         if (Core4.render && Core4.render.update) {
             Core4.render.update();
         }
