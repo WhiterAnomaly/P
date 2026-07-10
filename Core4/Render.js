@@ -37,6 +37,10 @@ Core4.render = {
             Core4.scene.draw();
         }
 
+        if (Core4.ui && Core4.ui.draw) {
+            Core4.ui.draw();
+        }
+
         if (Core4.transition && Core4.transition.update) {
             Core4.transition.update();
 }
