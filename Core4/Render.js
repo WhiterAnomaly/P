@@ -33,6 +33,10 @@ Core4.render = {
             Core4.text.draw();
         }
 
+        if (Core4.scene && Core4.scene.draw) {
+            Core4.scene.draw();
+        }
+
         // Aqui serão desenhados:
         // Fundo
         // Imagens
