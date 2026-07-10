@@ -29,6 +29,9 @@ Core4.render = {
 
     update() {
         this.clear();
+        if (Core4.text && Core4.text.draw) {
+            Core4.text.draw();
+        }
 
         // Aqui serão desenhados:
         // Fundo
