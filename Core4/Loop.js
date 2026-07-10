@@ -42,6 +42,10 @@ Core4.loop = {
             Core4.animation.update();
         }
 
+        if (Core4.scene && Core4.scene.update) {
+            Core4.scene.update();
+        }
+
         if (Core4.render && Core4.render.update) {
             Core4.render.update();
         }
