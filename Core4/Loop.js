@@ -50,6 +50,10 @@ Core4.loop = {
             Core4.scene.update();
         }
 
+        if (Core4.ui && Core4.ui.update) {
+            Core4.ui.update();
+        }
+
         if (Core4.render && Core4.render.update) {
             Core4.render.update();
         }
